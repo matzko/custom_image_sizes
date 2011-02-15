@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: Custom Image Sizes
-Plugin URI: http://ilfilosofo.com/blog/wordpress-plugins/filosofo-custom-image-sizes/
+Plugin URI: http://austinmatzko.com/wordpress-plugins/filosofo-custom-image-sizes/
 Description: A plugin that creates custom image sizes for image attachments.
 Author: Austin Matzko
-Author URI: http://ilfilosofo.com
+Author URI: http://austinmatzko.com
 Version: 1.0
 
-Copyright 2010  Austin Matzko  ( email : austin at pressedcode dot com )
+Copyright 2011  Austin Matzko  ( email : austin at pressedcode dot com )
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

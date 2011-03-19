@@ -31,7 +31,6 @@ if ( ! class_exists( 'Filosofo_Custom_Image_Sizes' ) ) {
 		public function __construct()
 		{
 			add_filter('image_downsize', array(&$this, 'filter_image_downsize'), 99, 3);
-
 		}
 
 		/**
@@ -148,7 +147,8 @@ if ( ! class_exists( 'Filosofo_Custom_Image_Sizes' ) ) {
 
 	function initialize_custom_image_sizes()
 	{
-		new Filosofo_Custom_Image_Sizes;
+		global $filosofo_custom_image_sizes;
+		$filosofo_custom_image_sizes = new Filosofo_Custom_Image_Sizes;
 	}
 
 	add_action('plugins_loaded', 'initialize_custom_image_sizes');

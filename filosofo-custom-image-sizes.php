@@ -72,6 +72,7 @@ if ( ! class_exists( 'Filosofo_Custom_Image_Sizes' ) ) {
 
 				if ( ! empty( $height ) && ! empty( $width ) ) {
 					$resized_path = $this->_generate_attachment($attachment_id, $width, $height, $crop);
+					do_action( 'custom_image_size_resized_path', $resized_path, $attachment_id, $width, $height, $crop );
 					$fullsize_url = wp_get_attachment_url($attachment_id);
 
 					$file_name = basename($resized_path);

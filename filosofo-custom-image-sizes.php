@@ -45,9 +45,9 @@ if ( ! class_exists( 'Filosofo_Custom_Image_Sizes' ) ) {
 			global $_wp_additional_image_sizes;
 
 			$attachment_id = (int) $attachment_id;
-
-			if ( is_array( $size_name ) )
-				$size_name = "$size_name[0]x$size_name[1]";
+			if ( is_array( $size_name ) && 1 < count( $size_name ) ) {
+				$size_name = array_shift( $size_name ) . 'x' . array_shift( $size_name );
+			}
 			$size_name = trim($size_name);
 			
 			$meta = wp_get_attachment_metadata($attachment_id);
